@@ -23,15 +23,17 @@
     }
     .navbar a {
         float: left;
-        display: block;
         color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
+        text-align: left;
+        font-weight: bold;
+        margin-right: 10px; /* Horizontal space between items */
         text-decoration: none;
+        line-height: 50px; /* Adjust the line-height as needed for vertical alignment */
     }
     .navbar a:hover {
-        background-color: #ddd;
-        color: black;
+        text-decoration: line-through;
+        color: #ddd;
+        text-decoration-thickness: 3px;
     }
 </style>
 </head>
@@ -49,7 +51,7 @@
 
 <img src="portrait.jpeg" alt="Rasmus Emil Tofthøj">
 
-<p>If you wanna make some cool stuff together email me.</p>
+<p>If you wanna make some cool stuff together reach out.</p>
 
 <script>
     var professions = ['engineer ⚙️', 'builder 🔨', 'designer 🧐','researcher 🌎'];
@@ -59,5 +61,41 @@
         index = (index + 1) % professions.length;
     }, 1000); // Change every 1000 milliseconds (3 seconds)
 </script>
+<style>
+    /* Existing styles... */
+
+    .contact-container {
+        background-color: #1E1C1C; /* Same as navbar */
+        color: rgb(217, 217, 217); /* Maintains the text color */
+        text-align: left;
+        padding: 2%;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 18px; /* Larger font size */
+    }
+
+    .contact-container a {
+        color: inherit; /* This ensures that the link color is the same as the container text color */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contact-container a:hover {
+        color: #ddd; /* Hover effect similar to navbar */
+        text-decoration: line-through; /* Optional: underline on hover */
+        text-decoration-thickness: 3px;
+    }
+
+</style>
+
+<div class="contact-container">
+    <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
+    rasmustofthoej@gmail.com <br>
+    +4530680366
+</div>
+
 </body>
 </html>
