@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rasmus Emil Tofthøj</title>
+<style>
+    /* Your existing styles... */
+
+    .navbar {
+        /* Your existing navbar styles... */
+    }
+
+    /* Style for the canvas */
+    #drawing-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; /* Ensures the canvas is behind other content */
+    }
+
+    /* Style adjustments may be needed for other elements to ensure they are above the canvas */
+    /* For example, for .contact-container: */
+    .contact-container {
+        /* Your existing contact-container styles... */
+        z-index: 10; /* Ensures the contact information is above the canvas */
+    }
+
+    /* Rest of your styles... */
+</style>
+</head>
+<body>
+
+    <!-- Canvas element for drawing -->
+    <canvas id="drawing-canvas"></canvas>
+
+    <!-- Your navbar... -->
+    <div class="navbar">
+        <!-- Navbar links... -->
+    </div>
+
+    <!-- Your content... -->
+
+    <!-- Your contact-container... -->
+    <div class="contact-container">
+        <!-- Contact information... -->
+    </div>
+
+    <!-- Your existing JavaScript... -->
+
+    <!-- JavaScript for drawing on the canvas -->
+    <script>
+        // Get the canvas element and context
+        var canvas = document.getElementById('drawing-canvas');
+        var ctx = canvas.getContext('2d');
+
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Function to handle drawing
+        function drawLine(ctx, x, y) {
+            ctx.lineTo(x, y); // Draw a line to the new position
+            ctx.strokeStyle = 'blue'; // Set the line color
+            ctx.lineWidth = 2; // Set the line width
+            ctx.stroke(); // Render the line
+        }
+
+        // Track whether the mouse is down
+        var mouseDown = false;
+
+        document.addEventListener('mousedown', function() {
+            mouseDown = true;
+            ctx.beginPath(); // Begin a new line
+        });
+
+        document.addEventListener('mouseup', function() {
+            mouseDown = false;
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (mouseDown) {
+                drawLine(ctx, e.clientX, e.clientY);
+            }
+        });
+
+        // Optional: Resize canvas when the window size changes
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>

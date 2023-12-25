@@ -19,11 +19,10 @@
     }
     .navbar {
         overflow: hidden;
-        background-color: #1E1C1C;
     }
     .navbar a {
         float: left;
-        color: #f2f2f2;
+        color:rgb(217, 217, 217);
         text-align: left;
         font-weight: bold;
         margin-right: 10px; /* Horizontal space between items */
@@ -32,55 +31,49 @@
     }
     .navbar a:hover {
         text-decoration: line-through;
-        color: #ddd;
         text-decoration-thickness: 3px;
     }
-    
-</style>
-</head>
-<body>
-
-    <div class="navbar">
-        <a href="projects.html">Projects</a>
-        <a href="cv.html">CV</a>
-         <a href="index.html">Me</a> <!-- Assuming this is your landing page script -->
-    </div>
-
-    <style>
-        /* Existing styles... */
-    
-        .contact-container {
-            background-color: #1E1C1C; /* Same as navbar */
-            color: rgb(217, 217, 217); /* Maintains the text color */
+    .contact-container {
             text-align: left;
-            padding: 2%;
-            position: fixed;
+            padding: 0%;
+            position: static; /* Change to 'static' if you don't want it to be always visible */
             width: 100%;
             left: 0;
             bottom: 0;
+            background-color: #1E1C1C; /* Match the background color with the body or as needed */
+            color: rgb(217, 217, 217); /* Text color */
             font-family: 'Helvetica', sans-serif;
-            font-size: 18px; /* Larger font size */
+            font-size: 18px;
         }
-    
+
         .contact-container a {
-            color: inherit; /* This ensures that the link color is the same as the container text color */
+            color: inherit;
             text-decoration: none;
             font-weight: bold;
         }
-    
+
         .contact-container a:hover {
-            color: #ddd; /* Hover effect similar to navbar */
-            text-decoration: line-through; /* Optional: underline on hover */
+            text-decoration: line-through;
             text-decoration-thickness: 3px;
         }
-    
-    </style>
-    
-    <div class="contact-container">
-        <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
-        rasmustofthoej@gmail.com <br>
-        +4530680366
+    .bottom-spacing {
+        margin-bottom: 100px; /* Adjust this value as needed */
+    }
+</style>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Me</a> <!-- Assuming this is your landing page script -->
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+         
     </div>
+    
+    <footer class="contact-container">
+    <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
+    rasmustofthoej@gmail.com <br>
+    +4530680366
+    </footer>
     
 
 </body>
