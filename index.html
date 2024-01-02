@@ -1,95 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rasmus Emil Tofthøj</title>
-<style>
-    body {
-        background-color: #1E1C1C;
-        color: rgb(217, 217, 217);
-        font-family: 'Helvetica', sans-serif;
-        text-align: left;
-        padding-top: 2%;
-        padding-left: 2%;
-    }
-    img {
-        border-radius: 5%;
-        width: 300px; /* Adjust the size as needed */
-    }
-    .navbar {
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        color:rgb(217, 217, 217);
-        text-align: left;
-        font-weight: bold;
-        margin-right: 10px; /* Horizontal space between items */
-        text-decoration: none;
-        line-height: 50px; /* Adjust the line-height as needed for vertical alignment */
-    }
-    .navbar a:hover {
-        text-decoration: line-through;
-        text-decoration-thickness: 3px;
-    }
-    .contact-container {
-            text-align: left;
-            padding: 0%;
-            position: static; /* Change to 'static' if you don't want it to be always visible */
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            background-color: #1E1C1C; /* Match the background color with the body or as needed */
-            color: rgb(217, 217, 217); /* Text color */
-            font-family: 'Helvetica', sans-serif;
-            font-size: 18px;
-        }
-
-        .contact-container a {
-            color: inherit;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-container a:hover {
-            text-decoration: line-through;
-            text-decoration-thickness: 3px;
-        }
-    .bottom-spacing {
-        margin-bottom: 100px; /* Adjust this value as needed */
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasmus Emil Tofthøj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-
     <div class="navbar">
-        <a href="index.html">Me</a> <!-- Assuming this is your landing page script -->
+        <a href="index.html">Me</a>
         <a href="projects.html">Projects</a>
         <a href="cv.html">CV</a>
-         
     </div>
-    
-<h1>Rasmus Emil Tofthøj</h1> 
-<p>I'm a Copenhagen based <span id="dynamic-text">engineer ⚙️</span>.</p>
 
-<script>
-    var professions = ['engineer ⚙️', 'builder 🔨', 'designer 🧐','researcher 🌎'];
-    var index = 0;
-    setInterval(function() {
-        document.getElementById('dynamic-text').textContent = professions[index];
-        index = (index + 1) % professions.length;
-    }, 1000); // Change every 1000 milliseconds (3 seconds)
-</script>
+    <h1>Rasmus Emil Tofthøj</h1> 
+    <p>I'm a Copenhagen based <span id="dynamic-text">engineer ⚙️</span>.</p>
 
-<p>I love to explore and create objects, products and experiences. Playfull, impactfull or both.</p>
+    <p>I love to explore and create objects, products and experiences. Playfull, impactful or both.</p>
 
-<img src="portrait.jpeg" alt="Rasmus Emil Tofthøj">
+    <img src="portrait.jpeg" alt="Rasmus Emil Tofthøj">
 
-<p class="bottom-spacing">If you wanna make some cool stuff together reach out.</p>
+    <p class="bottom-spacing">If you wanna make some cool stuff together reach out.</p>
 
-<footer class="contact-container">
-    <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
-    rasmustofthoej@gmail.com <br>
-    +4530680366
-</footer>
+    <footer class="contact-container">
+        <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
+        tofthoej.work@gmail.com <br>
+        +4530680366
+    </footer>
+
+<script src="script.js"></script>
+</body>
 </html>

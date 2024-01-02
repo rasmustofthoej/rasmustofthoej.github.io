@@ -1,80 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rasmus Emil Tofthøj</title>
-<style>
-    body {
-        background-color: #1E1C1C;
-        color: rgb(217, 217, 217);
-        font-family: 'Helvetica', sans-serif;
-        text-align: left;
-        padding-top: 2%;
-        padding-left: 2%;
-    }
-    img {
-        border-radius: 5%;
-        width: 300px; /* Adjust the size as needed */
-    }
-    .navbar {
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        color:rgb(217, 217, 217);
-        text-align: left;
-        font-weight: bold;
-        margin-right: 10px; /* Horizontal space between items */
-        text-decoration: none;
-        line-height: 50px; /* Adjust the line-height as needed for vertical alignment */
-    }
-    .navbar a:hover {
-        text-decoration: line-through;
-        text-decoration-thickness: 3px;
-    }
-    .contact-container {
-            text-align: left;
-            padding: 0%;
-            position: static; /* Change to 'static' if you don't want it to be always visible */
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            background-color: #1E1C1C; /* Match the background color with the body or as needed */
-            color: rgb(217, 217, 217); /* Text color */
-            font-family: 'Helvetica', sans-serif;
-            font-size: 18px;
-        }
-
-        .contact-container a {
-            color: inherit;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-container a:hover {
-            text-decoration: line-through;
-            text-decoration-thickness: 3px;
-        }
-    .bottom-spacing {
-        margin-bottom: 100px; /* Adjust this value as needed */
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasmus Emil Tofthøj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <div class="navbar">
-        <a href="index.html">Me</a> <!-- Assuming this is your landing page script -->
+        <a href="index.html">Me</a>
         <a href="projects.html">Projects</a>
         <a href="cv.html">CV</a>
-         
+    </div>
+
+    <!-- Wrap each project header in an anchor tag -->
+    <div class="project">
+        <a href="6500.html" class="project-link">
+            <h2 class="project-header">6500</h2>
+        </a>
+        <div class="image-display">
+            <img src="6500.png" alt="6500">
+        </div>
     </div>
     
-    <footer class="contact-container">
-    <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
-    rasmustofthoej@gmail.com <br>
-    +4530680366
-    </footer>
-    
+    <div class="project">
+        <a href="sabot.html" class="project-link">
+            <h2 class="project-header">SABOT</h2>
+        </a>
+        <div class="image-display">
+            <img src="sabot.jpeg" alt="SABOT">
+        </div>
+    </div>
 
+    <div class="project">
+        <a href="iot-minigolf.html" class="project-link">
+            <h2 class="project-header">iot minigolf</h2>
+        </a>
+        <div class="image-display">
+            <img src="iotminigolf.jpeg" alt="iot minigolf">
+        </div>
+    </div>
+
+    <div class="project">
+        <a href="deafblind-aid.html" class="project-link">
+            <h2 class="project-header">deafblind aid</h2>
+        </a>
+        <div class="image-display">
+            <img src="deafblind-aid.jpeg" alt="deafblind aid">
+        </div>
+    </div>
+
+    <footer class="contact-container">
+        <a href="https://www.linkedin.com/in/rasmus-emil-tofth%C3%B8j-5366151a2/" target="_blank">LinkedIn</a><br>
+        tofthoej.work@gmail.com <br>
+        +4530680366
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

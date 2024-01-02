@@ -1,0 +1,154 @@
+/*GENERAL BACKGROUND*/
+
+html, body {
+    height: 100%; /* Make sure html and body are at least the height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #1E1C1C;
+    color: rgb(217, 217, 217);
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: rgb(217, 217, 217);
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px; /* Horizontal space between items */
+    text-decoration: none;
+    line-height: 50px; /* Adjust the line-height as needed for vertical alignment */
+}
+
+.navbar a:hover {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+/* Main content style */
+.main-content {
+    min-height: calc(100vh - 150px); /* Adjust this value to the height of your footer */
+    padding-bottom: 150px; /* This should be equal to or greater than the height of the footer */
+    /* Rest of your styling */
+}
+
+/* Footer styles */
+.contact-container {
+    text-align: left;
+    padding: 2%;
+    width: 100%;
+    background-color: #1E1C1C;
+    color: rgb(217, 217, 217);
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0; /* Align the footer to the bottom */
+    left: 0; /* Align the footer to the left */
+    z-index: 100; /* Ensure it sits above other content */
+}
+
+.contact-container a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+/*INDEX*/
+
+img {
+    border-radius: 5%;
+    width: 300px; /* Adjust the size as needed */
+}
+
+.bottom-spacing {
+    margin-bottom: 100px; /* Adjust this value as needed */
+}
+
+/*PROJECTS*/
+
+.project-header {
+    cursor: pointer;
+    font-size: 40px; /* Adjust as needed */
+    font-style: italic;
+}
+
+.project-header::after {
+    content: ''; /* Hidden by default */
+    margin-left: 5px; /* Spacing between the text and the asterisk */
+    font-size: 40px; /* Match the font size of the header or as needed */
+}
+
+.project-header:hover::after {
+    content: '*'; /* Show asterisk on hover */
+    color: rgb(217, 217, 217); /* Same as the text color */
+}
+
+.project-link, .project-link:visited {
+    color: rgb(217, 217, 217); /* Your original text color */
+    text-decoration: none; /* Removes the underline */
+}
+
+.project-link:hover {
+    color: rgb(217, 217, 217); /* Maintains the color on hover */
+    text-decoration: none; /* Keeps the text without underline on hover */
+}
+
+.project-link:active {
+    color: rgb(217, 217, 217); /* Optional: Change color when the link is clicked */
+}
+
+.image-display {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* CV Styles */
+.cv-section {
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+.cv-heading {
+    font-size: 28px; /* Adjust as needed */
+    font-weight: bold;
+    color: rgb(217, 217, 217); /* Adjust if you want a different color */
+    margin-bottom: 10px; /* Adjust as needed */
+    border-bottom: 1px solid rgb(217, 217, 217); /* Optional: adds a line under the heading */
+    padding-bottom: 5px; /* Optional: space between text and underline */
+}
+
+.project-image {
+    width: 100%; /* Adjust based on your layout */
+    max-width: 600px; /* Set a maximum width for large screens */
+    margin: 20px 0; /* Add some margin around the image */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333; /* Choose a color that fits your design */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG to G-Code Converter</title>
+    <!-- You can include other head elements here -->
+</head>
+<body>
+    <h1>SVG to G-Code Converter for Pen Plotter</h1>
+
+    <form id="svgForm">
+        <label for="svgFile">Upload SVG File:</label>
+        <input type="file" id="svgFile" accept=".svg"><br><br>
+
+        <label for="startCmd">Start Command:</label>
+        <input type="text" id="startCmd"><br><br>
+
+        <label for="endCmd">End Command:</label>
+        <input type="text" id="endCmd"><br><br>
+
+        <label for="offCmd">Off Command:</label>
+        <input type="text" id="offCmd"><br><br>
+
+        <label for="onCmd">On Command:</label>
+        <input type="text" id="onCmd"><br><br>
+
+        <label for="feedRate">Feed Rate (ms):</label>
+        <input type="number" id="feedRate"><br><br>
+
+        <button type="button" onclick="convertSVGToGCode()">Convert</button>
+    </form>
+
+    <h2>Generated G-Code:</h2>
+    <textarea id="gcodeOutput" rows="20" cols="70"></textarea>
+
+    <!-- Include your JavaScript here -->
+    <script src="svg_to_gcode.js"></script>
+</body>
+</html>
